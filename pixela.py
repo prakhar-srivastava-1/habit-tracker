@@ -39,3 +39,20 @@ class Pixela:
             headers=headers
         )
         return response.text
+
+    def create_pixel(self, graph_id, activity_date, activity_time):
+        pixel_endpoint = f"{self.endpoint}/{self.username}/graphs/{graph_id}"
+        headers = {
+            "X-USER-TOKEN": self.token
+        }
+        parameters = {
+            "date": activity_date,
+            "quantity": activity_time,
+            # "optionalData": activity[2]
+        }
+        response = requests.post(
+            url=pixel_endpoint,
+            json=parameters,
+            headers=headers
+        )
+        return response.text
