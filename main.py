@@ -1,9 +1,13 @@
 from pixela import Pixela
 
+GRAPH_ID = "graph1"
+GRAPH_NAME = "Gym Workout"
 
-# make an API call to create a new user
+# make an API call to create a new user - call once
 pixela = Pixela()
 # print(pixela.create_user_account())
 
-# make a new call to create graph
-print(pixela.create_graph("graph1", "Gym Workout"))
+# make a new call to create graph - call once
+# print(pixela.create_graph(GRAPH_ID, GRAPH_NAME))
+
+# post a new pixel
