@@ -15,3 +15,6 @@ pixela = Pixela()
 # activity_date = dt.datetime.now().strftime("%Y%m%d")
 # activity_time = '1.0'
 # print(pixela.create_pixel(GRAPH_ID, activity_date, activity_time))
+
+# update a pixel - tested with 20210814
+print(pixela.update_pixel(GRAPH_ID, '20210814', '0.5'))
