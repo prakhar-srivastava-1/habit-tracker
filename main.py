@@ -1,4 +1,5 @@
 from pixela import Pixela
+import datetime as dt
 
 GRAPH_ID = "graph1"
 GRAPH_NAME = "Gym Workout"
@@ -11,6 +12,6 @@ pixela = Pixela()
 # print(pixela.create_graph(GRAPH_ID, GRAPH_NAME))
 
 # post a new pixel
-activity_date = '20210814'
-activity_time = '1.0'
-print(pixela.create_pixel(GRAPH_ID, activity_date, activity_time))
+# activity_date = dt.datetime.now().strftime("%Y%m%d")
+# activity_time = '1.0'
+# print(pixela.create_pixel(GRAPH_ID, activity_date, activity_time))
