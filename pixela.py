@@ -72,3 +72,14 @@ class Pixela:
             headers=headers
         )
         return response.text
+
+    def delete_pixel(self, graph_id, activity_date):
+        pixel_endpoint = f"{self.endpoint}/{self.username}/graphs/{graph_id}/{activity_date}"
+        headers = {
+            "X-USER-TOKEN": self.token
+        }
+        response = requests.delete(
+            url=pixel_endpoint,
+            headers=headers
+        )
+        return response.text

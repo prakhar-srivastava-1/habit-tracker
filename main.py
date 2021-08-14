@@ -17,4 +17,7 @@ pixela = Pixela()
 # print(pixela.create_pixel(GRAPH_ID, activity_date, activity_time))
 
 # update a pixel - tested with 20210814
-print(pixela.update_pixel(GRAPH_ID, '20210814', '0.5'))
+# print(pixela.update_pixel(GRAPH_ID, '20210814', '0.5'))
+
+# delete a pixel - tested with 20210814
+print(pixela.delete_pixel(GRAPH_ID, '20210814'))
